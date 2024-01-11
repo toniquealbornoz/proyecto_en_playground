@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 
 const app= express();
-const port = 3005;
+
 
 const publicPath = path.join(__dirname, "./public");
 app.use(express.static(publicPath));
@@ -23,6 +23,7 @@ app.get("/login", (req,res)=>{
     res.sendFile(path.join(__dirname, "./views/login.html"))
 })
 
+const port = process.env.PORT || 3005;
 app.listen(port,(()=>{
     console.log(`Run Forest Run en http://localhost:${port}`);
 }))
