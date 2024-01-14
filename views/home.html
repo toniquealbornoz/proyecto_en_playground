@@ -39,8 +39,37 @@
             </ul>
 
         </nav>
-                 
-
+     <!--Aca van los Formularios de Productos-->            
+        <form action="/crear_producto" method="POST">
+            <div>
+                <label>Nombre del producto:</label>
+                <input type="text" name="nombre">
+            </div>
+            <div>
+                <label>Precio:</label>
+                <input type="text" name="precio">
+            </div>
+            <div>
+                <label>Categoria:</label>
+                <select name="categoria">
+                    <option value="hogar">Hogar</option>
+                    <option value="electro">Electro</option>
+                    <option value="indumentaria">Indumentaria</option>
+                </select>
+            </div>
+            <div>
+                <label>Ciudad:</label>
+                <select name="ciudad">
+                    <option value="baires">Buenos Aires</option>
+                    <option value="cba">Córdoba</option>
+                    <option value="ssj">Jujuy</option>
+                </select>
+            </div>
+            <div>
+                <label>Está en oferta:</label>
+                <input type="radio" name="enOferta">
+            </div>
+        </form>
     </header>
     <main>
         <h4><input value="Buscar productos, marcas"></input></h4>
