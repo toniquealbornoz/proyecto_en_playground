@@ -59,6 +59,32 @@ body{
     padding: 5px 0;
 }
 
+.create_form{
+    padding: 20px 15;
+}
+
+.control_formulario{
+    margin-bottom: 15px;
+}
+.control_formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+.control{
+    width: 100%;
+    padding: 8px;
+}
+button{
+    background-color:#39b54a;
+    border: none;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 @media (min-width: 768px){
     .main_header_top_bar{
         display: flex;
